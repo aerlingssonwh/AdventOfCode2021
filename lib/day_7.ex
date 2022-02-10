@@ -15,7 +15,7 @@ defmodule AdventOfCode2021.Day7 do
   end
 
   def additive_factorial(num) do
-    ((num * num) + num) / 2
+    (num * num + num) / 2
   end
 
   defp calc_least_cost_naive(positions, distance_fun) do
