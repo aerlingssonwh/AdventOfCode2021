@@ -18,6 +18,6 @@ defmodule AdventOfCode2021.Day7Test do
   end
 
   test "Real input p2" do
-    assert Day7.calc_fuel(@real_input, :not_constant) == 600_000
+    assert Day7.calc_fuel(@real_input, :not_constant) == 95_476_244
   end
 end
