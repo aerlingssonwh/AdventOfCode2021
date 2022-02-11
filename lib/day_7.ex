@@ -19,7 +19,9 @@ defmodule AdventOfCode2021.Day7 do
   end
 
   defp calc_least_cost_naive(positions, distance_fun) do
-    positions
+    {min, max} = Enum.min_max(positions)
+
+    min..max
     |> Enum.map(fn pos1 ->
       Enum.map(positions, fn pos2 ->
         distance_fun.(pos1, pos2)
